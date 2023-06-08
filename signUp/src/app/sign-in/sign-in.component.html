@@ -1,0 +1,38 @@
+<div class="signIn-body">
+    <div class="form">
+        <div class="box1">
+            <form action="" #myform="ngForm">
+                <p class="heading">Login</p>
+                <div class="form-group">
+                    <label for="">Email :</label><br><br>
+                    <input type="text" name="email" placeholder="Enter Email" [(ngModel)]="email">
+                </div>
+                <div class="form-group">
+                    <label for="">Password :</label><br><br>
+                    <input type="password" name="password" placeholder="Password" [(ngModel)]="password"><br>
+                    <div class="forgotpass">
+                        <span> <a href="">Forgot Password?</a></span>
+                    </div>
+                </div>
+                <div class="form-group sub-button">
+                    <button type="submit" (click)="getData(myform.value)">Login</button>
+                    <div class="sign-up">
+                        <span>Don't have an account? <a href="">Sign up</a></span>
+                    </div>
+                    <div class="terms">
+                        <span>By creating an account, you agree to our <a href="">Terms of Service </a>and <a href="">Privacy Policy  </a></span><br>
+                    </div>
+                    <div class="copyrights">
+                        <span>© Copyrights</span>
+                    </div>
+                </div>
+            </form>
+            <!-- {{email}} -->
+            <!-- {{password}}     -->
+            <!-- {{myform.value | json}} -->
+        </div>
+        <div class="box2">
+            <img src="./assets/box2.png" alt="soon">
+        </div>
+    </div>
+</div>
