@@ -12,11 +12,11 @@ class DataBase {
     private _connection: mysql.Connection;  
     constructor() {
         this._connection = mysql.createConnection({
-            host: '127.0.0.1',
+            host: 'YOUR_HOST',
             port: 3306, // Provide a valid number for the port
-            user: 'thangam',
-            password: 'Thasan24',
-            database: 'test',
+            user: 'YOUR_USER_NAME',
+            password: 'YOUR_PASSWORD',
+            database: 'YOUR_DATABASE_NAME',
         });
         
        
